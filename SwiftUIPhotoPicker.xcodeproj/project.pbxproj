@@ -11,6 +11,9 @@
 		CA4EB9C32806F96A00F5A564 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9C22806F96A00F5A564 /* ContentView.swift */; };
 		CA4EB9C52806F96B00F5A564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4EB9C42806F96B00F5A564 /* Assets.xcassets */; };
 		CA4EB9C82806F96C00F5A564 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4EB9C72806F96C00F5A564 /* Preview Assets.xcassets */; };
+		CA4EB9D42806FA2A00F5A564 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9D32806FA2A00F5A564 /* ViewModel.swift */; };
+		CA4EB9D82806FCC500F5A564 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9D72806FCC500F5A564 /* Picker.swift */; };
+		CA4EB9DC2806FECF00F5A564 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9DB2806FECF00F5A564 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		CA4EB9C22806F96A00F5A564 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA4EB9C42806F96B00F5A564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4EB9C72806F96C00F5A564 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA4EB9D32806FA2A00F5A564 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CA4EB9D72806FCC500F5A564 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		CA4EB9DB2806FECF00F5A564 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,12 @@
 		CA4EB9BF2806F96900F5A564 /* SwiftUIPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				CA4EB9D22806F99900F5A564 /* Extensions */,
+				CA4EB9D12806F98F00F5A564 /* UIViewRepresentables */,
+				CA4EB9D02806F98800F5A564 /* Models */,
+				CA4EB9CF2806F98000F5A564 /* ViewModels */,
+				CA4EB9CE2806F97900F5A564 /* Views */,
 				CA4EB9C02806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift */,
-				CA4EB9C22806F96A00F5A564 /* ContentView.swift */,
 				CA4EB9C42806F96B00F5A564 /* Assets.xcassets */,
 				CA4EB9C62806F96C00F5A564 /* Preview Content */,
 			);
@@ -65,6 +75,45 @@
 				CA4EB9C72806F96C00F5A564 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA4EB9CE2806F97900F5A564 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EB9C22806F96A00F5A564 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA4EB9CF2806F98000F5A564 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EB9D32806FA2A00F5A564 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CA4EB9D02806F98800F5A564 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EB9D72806FCC500F5A564 /* Picker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA4EB9D12806F98F00F5A564 /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				CA4EB9DB2806FECF00F5A564 /* ImagePicker.swift */,
+			);
+			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		CA4EB9D22806F99900F5A564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4EB9C32806F96A00F5A564 /* ContentView.swift in Sources */,
+				CA4EB9D82806FCC500F5A564 /* Picker.swift in Sources */,
+				CA4EB9DC2806FECF00F5A564 /* ImagePicker.swift in Sources */,
+				CA4EB9D42806FA2A00F5A564 /* ViewModel.swift in Sources */,
 				CA4EB9C12806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +324,7 @@
 				DEVELOPMENT_TEAM = 87BU9Q2DF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +354,7 @@
 				DEVELOPMENT_TEAM = 87BU9Q2DF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
