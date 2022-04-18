@@ -13,12 +13,14 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 if let image = vm.image {
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(minWidth: 0,
-                        maxWidth: .infinity
-                    )
+                    ZoomableScrollView {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(minWidth: 0,
+                            maxWidth: .infinity
+                        )
+                    }
                 } else {
                     Image(systemName: "photo.fill")
                         .resizable()
@@ -46,11 +48,16 @@ struct ContentView: View {
             }
             //sheet is similar to modal sheet in Flutter
             .sheet(isPresented: $vm.showPicker
-                         , content: {
-                ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $vm.image)
-                //this ignores camera view safe area
+                , content: {
+                    ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $vm.image)
+                    //this ignores camera view safe area
                     .ignoresSafeArea()
-            })
+                })
+                .alert("Error", isPresented: $vm.showCameraAlert, presenting: vm.cameraError, actions: { cameraError in
+                cameraError.button
+            }, message: { cameraError in
+                    Text(cameraError.message)
+                })
                 .navigationTitle("My Images")
         }
     }
