@@ -11,6 +11,7 @@
 		CA244BA7280EEBFA00E26A2D /* MyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA244BA6280EEBFA00E26A2D /* MyImage.swift */; };
 		CA249B68282A86EB00A60625 /* Filemanager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA249B67282A86EB00A60625 /* Filemanager+Extension.swift */; };
 		CA249B6A282A87B800A60625 /* MyImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA249B69282A87B800A60625 /* MyImageError.swift */; };
+		CA249B6C282A8C7B00A60625 /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA249B6B282A8C7B00A60625 /* ButtonLabel.swift */; };
 		CA4EB9C12806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9C02806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift */; };
 		CA4EB9C32806F96A00F5A564 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9C22806F96A00F5A564 /* ContentView.swift */; };
 		CA4EB9C52806F96B00F5A564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4EB9C42806F96B00F5A564 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		CA244BA6280EEBFA00E26A2D /* MyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImage.swift; sourceTree = "<group>"; };
 		CA249B67282A86EB00A60625 /* Filemanager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Filemanager+Extension.swift"; sourceTree = "<group>"; };
 		CA249B69282A87B800A60625 /* MyImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageError.swift; sourceTree = "<group>"; };
+		CA249B6B282A8C7B00A60625 /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
 		CA4EB9BD2806F96900F5A564 /* SwiftUIPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4EB9C02806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPhotoPickerApp.swift; sourceTree = "<group>"; };
 		CA4EB9C22806F96A00F5A564 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				CA4EB9C22806F96A00F5A564 /* ContentView.swift */,
+				CA249B6B282A8C7B00A60625 /* ButtonLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				CA4EB9D82806FCC500F5A564 /* Picker.swift in Sources */,
 				CA4EB9DC2806FECF00F5A564 /* ImagePicker.swift in Sources */,
 				CA4EB9D42806FA2A00F5A564 /* ViewModel.swift in Sources */,
+				CA249B6C282A8C7B00A60625 /* ButtonLabel.swift in Sources */,
 				CA072D1D280D850A003E6601 /* ZoomableScrollView.swift in Sources */,
 				CA4EB9C12806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift in Sources */,
 				CA249B6A282A87B800A60625 /* MyImageError.swift in Sources */,
