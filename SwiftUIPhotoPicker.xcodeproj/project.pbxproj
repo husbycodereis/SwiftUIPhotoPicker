@@ -19,6 +19,7 @@
 		CA4EB9D42806FA2A00F5A564 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9D32806FA2A00F5A564 /* ViewModel.swift */; };
 		CA4EB9D82806FCC500F5A564 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9D72806FCC500F5A564 /* Picker.swift */; };
 		CA4EB9DC2806FECF00F5A564 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EB9DB2806FECF00F5A564 /* ImagePicker.swift */; };
+		CAE1B0972833D44A009B88B5 /* ContentView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1B0962833D44A009B88B5 /* ContentView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CA4EB9D32806FA2A00F5A564 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CA4EB9D72806FCC500F5A564 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		CA4EB9DB2806FECF00F5A564 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		CAE1B0962833D44A009B88B5 /* ContentView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				CA4EB9C22806F96A00F5A564 /* ContentView.swift */,
 				CA249B6B282A8C7B00A60625 /* ButtonLabel.swift */,
+				CAE1B0962833D44A009B88B5 /* ContentView+Extension.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				CA4EB9D42806FA2A00F5A564 /* ViewModel.swift in Sources */,
 				CA249B6C282A8C7B00A60625 /* ButtonLabel.swift in Sources */,
 				CA072D1D280D850A003E6601 /* ZoomableScrollView.swift in Sources */,
+				CAE1B0972833D44A009B88B5 /* ContentView+Extension.swift in Sources */,
 				CA4EB9C12806F96A00F5A564 /* SwiftUIPhotoPickerApp.swift in Sources */,
 				CA249B6A282A87B800A60625 /* MyImageError.swift in Sources */,
 			);
@@ -341,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPhotoPicker/Preview Content\"";
-				DEVELOPMENT_TEAM = 87BU9Q2DF6;
+				DEVELOPMENT_TEAM = 35GDF55MYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -371,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPhotoPicker/Preview Content\"";
-				DEVELOPMENT_TEAM = 87BU9Q2DF6;
+				DEVELOPMENT_TEAM = 35GDF55MYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

@@ -47,6 +47,30 @@ class ViewModel: ObservableObject {
     func reset(){
         image = nil
         imageName = ""
+        isEditing = false
+        selectedImage = nil
+    }
+    
+    func display(_ myImage: MyImage){
+        image = myImage.image
+        imageName = myImage.name
+        selectedImage = myImage
+    }
+    
+    func updateSelected (){
+        if let index = myImages.firstIndex(where: {$0.id == selectedImage!.id}){
+            myImages[index].name = imageName
+            saveMyImagesJSONFile()
+            reset()
+        }
+    }
+    
+    func deleteSelected(){
+        if let index = myImages.firstIndex(where: {$0.id == selectedImage!.id}){
+            myImages.remove(at: index)
+            saveMyImagesJSONFile()
+            reset()
+        }
     }
     // adds an image to the cache
     func addMyImage(_ name: String, image: UIImage){
@@ -70,6 +94,7 @@ class ViewModel: ObservableObject {
         do {
             let data = try encoder.encode(myImages)
             let jsonString = String(decoding: data, as: UTF8.self)
+            reset()
             do {
                 print(jsonString)
                 try FileManager().saveDocument(contents: jsonString)
@@ -80,6 +105,22 @@ class ViewModel: ObservableObject {
         } catch  {
             showFileAlert = true
             appError = MyImageError.ErrorType(error: .encodingError)
+        }
+    }
+    
+    func loadMyImagesJSONFile(){
+        do {
+            let data = try FileManager().readDocument()
+            let decoder = JSONDecoder()
+            do {
+                myImages = try decoder.decode([MyImage].self, from: data)
+            } catch  {
+                showFileAlert = true
+                appError = MyImageError.ErrorType(error: .decodingError)
+            }
+        } catch  {
+            showFileAlert = true
+            appError = MyImageError.ErrorType(error: error as! MyImageError)
         }
     }
 }
